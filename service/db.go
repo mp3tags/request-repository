@@ -18,7 +18,7 @@ func ConnectToDb() *sql.DB {
 
 	for {
 		// "username:password@tcp(host:port)/db_name"
-		conn := fmt.Sprintf("%s:%s@tcp(%s:%s)/%s",
+		conn := fmt.Sprintf("%s:%s@tcp(%s:%s)/%s?parseTime=true",
 			os.Getenv("MYSQL_USER"),
 			os.Getenv("MYSQL_PASSWORD"),
 			os.Getenv("MYSQL_HOST"),

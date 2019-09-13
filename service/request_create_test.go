@@ -2,8 +2,6 @@ package service
 
 import (
 	"context"
-	_ "github.com/go-sql-driver/mysql"
-	_ "github.com/golang-migrate/migrate/source/file"
 	"github.com/golang/protobuf/ptypes/timestamp"
 	"github.com/mp3tags/request-repository-proto"
 	"github.com/stretchr/testify/assert"
